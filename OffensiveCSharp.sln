@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29326.143
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbandonedCOMKeys", "AbandonedCOMKeys\AbandonedCOMKeys.csproj", "{0D75CAF0-A6C9-45E2-A17E-79F53ED44E03}"
 EndProject
@@ -33,6 +33,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COMHunter", "COMHunter\COMHunter.csproj", "{E5291D34-7D97-4C67-A8D8-69F36263473D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HookDetector", "HookDetector\HookDetector.csproj", "{0C30E330-0E85-4D86-8104-E47302DBF592}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "x509parse", "x509parse\x509parse.csproj", "{A8229D9F-683A-44E4-9B3A-9551C44D8873}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -96,14 +98,18 @@ Global
 		{F729228E-A0FA-463E-BD35-92C0B78435E9}.Debug|anycpu.Build.0 = Debug|Any CPU
 		{F729228E-A0FA-463E-BD35-92C0B78435E9}.Release|anycpu.ActiveCfg = Release|Any CPU
 		{F729228E-A0FA-463E-BD35-92C0B78435E9}.Release|anycpu.Build.0 = Release|Any CPU
-		{E5291D34-7D97-4C67-A8D8-69F36263473D}.Debug|anycpu.ActiveCfg = Debug|anycpu
-		{E5291D34-7D97-4C67-A8D8-69F36263473D}.Debug|anycpu.Build.0 = Debug|anycpu
-		{E5291D34-7D97-4C67-A8D8-69F36263473D}.Release|anycpu.ActiveCfg = Release|anycpu
-		{E5291D34-7D97-4C67-A8D8-69F36263473D}.Release|anycpu.Build.0 = Release|anycpu
+		{E5291D34-7D97-4C67-A8D8-69F36263473D}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{E5291D34-7D97-4C67-A8D8-69F36263473D}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{E5291D34-7D97-4C67-A8D8-69F36263473D}.Release|anycpu.ActiveCfg = Release|Any CPU
+		{E5291D34-7D97-4C67-A8D8-69F36263473D}.Release|anycpu.Build.0 = Release|Any CPU
 		{0C30E330-0E85-4D86-8104-E47302DBF592}.Debug|anycpu.ActiveCfg = Debug|Any CPU
 		{0C30E330-0E85-4D86-8104-E47302DBF592}.Debug|anycpu.Build.0 = Debug|Any CPU
 		{0C30E330-0E85-4D86-8104-E47302DBF592}.Release|anycpu.ActiveCfg = Release|Any CPU
 		{0C30E330-0E85-4D86-8104-E47302DBF592}.Release|anycpu.Build.0 = Release|Any CPU
+		{A8229D9F-683A-44E4-9B3A-9551C44D8873}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{A8229D9F-683A-44E4-9B3A-9551C44D8873}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{A8229D9F-683A-44E4-9B3A-9551C44D8873}.Release|anycpu.ActiveCfg = Release|Any CPU
+		{A8229D9F-683A-44E4-9B3A-9551C44D8873}.Release|anycpu.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

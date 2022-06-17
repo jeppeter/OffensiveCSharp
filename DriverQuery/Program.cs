@@ -54,6 +54,7 @@ namespace DriverQuery
                     fileInfo = FileVersionInfo.GetVersionInfo(driverFile);
 
                     cert = X509Certificate.CreateFromSignedFile(driverFile);
+                    Console.WriteLine("cert [{1}] Handle {0}", cert.Handle,driverFile);
                     cert2 = new X509Certificate2(cert.Handle);
                 }
                 catch (CryptographicException)
