@@ -34,7 +34,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COMHunter", "COMHunter\COMH
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HookDetector", "HookDetector\HookDetector.csproj", "{0C30E330-0E85-4D86-8104-E47302DBF592}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "x509parse", "x509parse\x509parse.csproj", "{A8229D9F-683A-44E4-9B3A-9551C44D8873}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "x509parse", "x509parse\x509parse.csproj", "{AACC3DFB-4753-4815-A940-B40E94F90C33}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -106,10 +106,10 @@ Global
 		{0C30E330-0E85-4D86-8104-E47302DBF592}.Debug|anycpu.Build.0 = Debug|Any CPU
 		{0C30E330-0E85-4D86-8104-E47302DBF592}.Release|anycpu.ActiveCfg = Release|Any CPU
 		{0C30E330-0E85-4D86-8104-E47302DBF592}.Release|anycpu.Build.0 = Release|Any CPU
-		{A8229D9F-683A-44E4-9B3A-9551C44D8873}.Debug|anycpu.ActiveCfg = Debug|Any CPU
-		{A8229D9F-683A-44E4-9B3A-9551C44D8873}.Debug|anycpu.Build.0 = Debug|Any CPU
-		{A8229D9F-683A-44E4-9B3A-9551C44D8873}.Release|anycpu.ActiveCfg = Release|Any CPU
-		{A8229D9F-683A-44E4-9B3A-9551C44D8873}.Release|anycpu.Build.0 = Release|Any CPU
+		{AACC3DFB-4753-4815-A940-B40E94F90C33}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{AACC3DFB-4753-4815-A940-B40E94F90C33}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{AACC3DFB-4753-4815-A940-B40E94F90C33}.Release|anycpu.ActiveCfg = Release|Any CPU
+		{AACC3DFB-4753-4815-A940-B40E94F90C33}.Release|anycpu.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
